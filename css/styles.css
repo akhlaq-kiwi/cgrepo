@@ -1,0 +1,593 @@
+/* CSS Document */
+body{
+	padding:0px;
+	margin:0px;
+	font-family:arial;
+	font-size:13px;
+	line-height:18px;
+	color:#231F20;
+	background: #CFCFCF;
+}
+
+form{
+	padding:0px;
+	margin:0px;
+}
+h2{
+	font-size: 16px;
+	color:#231F20;
+	padding: 0px;
+	margin: 10px 0px 0px 5px;
+}
+a{
+	color:#206EC3;
+	text-decoration:none;
+}
+a:hover{
+	text-decoration:underline;
+}
+p{
+	margin:0px;
+	padding:2px 0px;
+}
+h1{
+	color:#02ACE9;
+	margin:0px;
+}
+.clr{
+	clear:both;
+}
+#main {
+	width: 900px;
+	display: block;
+	margin: 0px auto;
+	border:1px solid;
+	border-top:0px;
+	border-bottom:0px;
+	
+}
+#header {
+	background-image: url(../images/page-bg.jpg);
+	background-repeat: repeat-x;
+	height:130px;
+}
+
+.logo {
+	display: block;
+	height: auto;
+	width: 250px;
+	float: left;
+	margin: 0;
+}
+.accountinfo {
+	height: 90px;
+	float: right;
+}
+.top_menu {
+	height:60px;
+}
+.top_menu ul{
+	padding:0px;
+	margin:0px;
+	list-style:none;
+}
+.top_menu ul li{
+	padding:0px 18px 0;
+	margin:1px 5px;
+	float:left;
+	border-bottom:15px #FF0000 solid;
+}
+.top_menu ul li a{
+	color: #231F20;
+    font-family: arial;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.top_menu ul li a.green:hover{
+	color: #2BBC3C;
+}
+.top_menu ul li a.red:hover{
+	color: #F00000;
+}
+.top_menu ul li a.orenge:hover{
+	color: #E09600;
+}
+.top_menu ul li a.blue:hover{
+	color:#02ACE9;
+}
+#content{
+	background:#F4F4F4;
+}
+.text{
+	padding:10px;
+	text-align:justify;
+	width:550px;
+	float:left;
+}
+.box_container{
+	float: left;
+    padding: 2px;
+	float:right;
+    width: 325px;
+}
+.box{
+	width:325px;
+	float:left;
+	margin:10px 10px 0 0px;
+	background:#ffffff;
+}
+.box_top{
+	background:url(../images/box-top.jpg) no-repeat;
+	color:#FFFFFF;
+	font-weight:bold;
+
+	padding:9px;	
+}  
+.box_middle{
+	border-top:0px;
+	border-bottom:0px;
+} 
+.ad_box{
+	width:208px;
+	float:left;
+	height:200px;
+	margin:10px 0;
+	background:#ffffff;
+	border:1px solid #CCCCCC;
+} 
+#footer{
+	padding:20px;
+	text-align:center;
+	border-top:#FFFFFF 10px solid;
+	background:#F4F4F4;
+}
+#footer_link{
+	width:450px;
+	margin:0px auto;	
+}
+#footer_link ul{
+	padding:0px;
+	margin:auto;
+	list-style:none;
+}
+#footer_link ul li{
+	padding:0px 5px;
+	border-right:1px solid #333333;
+	float:left;
+}
+.copyright{
+	padding:10px 0px 0px 0px;
+	font-size:11px;
+}
+#footer_link ul li.nb{
+	border:0px;
+}
+.featured_box{
+	border:1px solid;
+}
+.login_box{
+	height:58px;
+	background: #fff;
+}
+.whiteheading{
+	color:#ffffff;
+	font-weight:bold;
+}
+.msg{
+	padding:5px;
+	margin:0px;
+	color:#990000;
+	text-align:center;
+	border:#CCCCCC 1px solid;
+}
+
+#admin_left{
+	float:left;
+	border:1px solid;
+	min-height:400px;
+	width:150px;
+	padding:5px;
+}
+#admin_inner{
+	float:left;
+	padding:5px;
+	width:700px;
+	background:#fff;
+}
+h1.inner_title{
+	border:1px solid #D8FCFB;
+	padding:8px;
+	background:url(../images/inner_title_bg.jpg);
+	height:26px;
+}
+
+.inner-content{
+	border:1px solid #D8FCFB;
+	padding:8px;
+	margin:5px 2px;
+	background:#fff;
+	float:left;
+	width:606px;
+}
+.inner-right{
+	border:1px solid #D8FCFB;
+	padding:8px;
+	margin:5px 4px 5px 0px;
+	background:#fff;
+	float:right;
+	width:250px;
+	min-height:400px;
+}
+#profile_left{
+	border:1px solid #D8FCFB;
+	background:#fff;
+	float:left;
+	width:180px;
+	min-height:400px;
+	padding:2px;
+	margin: 2px 2px 2px 0px;
+
+}
+#profile_content{
+	border:1px solid #D8FCFB;
+	background:#fff;
+	float:left;
+	width:703px;
+	min-height:400px;
+	padding:2px;
+	margin: 2px 2px 2px 0px; 
+
+}
+.profile_image{
+	padding:0px;
+	margin:0px;
+	text-align:center;
+}
+.profile_menu ul{
+	list-style:none;
+	padding:0px;
+	margin:0px;
+}
+.profile_menu ul li{
+	padding:0px;
+	margin:0px 0px 1px 0px;
+	display:block;
+}
+.profile_menu ul li a{
+	padding:4px;
+	font-size:13px;
+	background:#02ACE9;
+	color:#fff;
+	display:block;
+	font-weight:bold;
+	text-decoration:none;
+}
+.profile_menu ul li a:hover{
+	background:#999999;
+}
+
+.main_menu{
+	height:30px;
+	padding:0px;
+	float:left;
+}
+.main_menu ul{
+	padding:0px;
+	margin:0px;
+	list-style:none;
+}
+.main_menu ul li{
+	float:left;
+	padding:10px;
+}
+.main_menu ul li a{
+	font-weight:bold;
+	text-decoration:none;
+}
+.search{
+	padding:8px 10px 6px 0px;
+	float:right;
+}
+a.city{
+	font-size:11px;
+	font-weight:normal;
+}
+
+#general_left{
+	border:1px solid #D8FCFB;
+	background:#fff;
+	float:left;
+	width:150px;
+	min-height:400px;
+	padding:2px;
+	margin: 2px 2px 2px 0px; 
+}
+#general_content{
+	border:1px solid #D8FCFB;
+	background:#fff;
+	float:left;
+	width:575px;
+	min-height:400px;
+	padding:2px;
+	margin: 2px 2px 2px 0px; 
+}
+
+.general_content_inner{
+	padding:5px;
+	margin: 0px;
+	line-height:20px;
+	font-size:12px;
+	text-align:justify;
+}
+
+#general_right{
+	border:1px solid #D8FCFB;
+	background:#fff;
+	float:left;
+	width:150px;
+	min-height:400px;
+	padding:2px;
+	margin: 2px 2px 2px 0px; 
+}
+
+h1.inner_title a{
+	color:#3366FF;
+	font-size:13px;
+	float:right;
+}
+h1.inner_title span{
+	float:left;
+}
+.popup{
+	width:400px;
+	margin:0px auto;
+	border:5px solid #CCCCCC;
+	padding:5px;
+	z-index:99;
+	position:fixed;
+	top:100px;
+	left:300px;
+	background:#FBFBFB;
+}
+.button{
+	height:25px;
+	color:#fff;
+	padding:2px;
+	background:#02ACE9;
+	border:1px solid #fff;
+	font-weight:bold;
+}
+.unread{
+	background:#E5E5E5;
+}
+.read{
+	cursor:pointer;
+	border-top:1px solid #D6D4D5;
+}
+.uploader{
+	padding:10px;
+	border:1px solid #9AE2F9;
+	text-align:center;
+}
+.thumb_image{
+	padding:1px;
+	margin:1px;
+	border:1px solid #9AE2F9;
+	text-align:center;
+	float:left;
+	position:relative;
+}
+.new_items_head{
+	padding:5px;
+	background:#02ACE9;
+	border:1px solid #02ACE9;
+	font-weight:bold;
+	margin:5px 0px 0px 0px;
+	color:#fff;
+}
+.new_items_List{
+	padding:2px 5px;;
+	border:1px solid #02ACE9;
+}
+
+.location ul{
+	list-style:none;
+	padding:0px;
+	margin:0px;
+}
+.location ul li{
+	padding:1px 0px 0px 5px; 
+	margin:0px 0px 0px 0px;
+	display:block;
+}
+.location ul li a{
+	padding:0px;
+	font-size:11px;
+	display:block;
+	text-decoration:none;
+}
+.location ul li a:hover{
+	text-decoration:underline;
+}
+
+.tool_tip{
+	border:1px solid #999999;
+	padding:3px;
+	background:yellow;
+	font-weight:bold;
+	min-width:100px;
+	display:block;
+	position:absolute;
+	top:0px;
+	left:0px;
+	font-size:10px;
+}
+
+.txtbox{
+	width: 150px;
+	border:1px solid #999999;	
+	}
+a.view_all{
+	color:#fff;
+	display: block;
+	float:right;	
+	}
+	
+/********************************* Cricketer Profile **************************************/
+#banner{
+		height: 150px;	
+		background: #206EC3;
+	}
+.profile_image_public{
+		width: 182px;
+		border:1px solid #206EC3;
+		float: left;		
+		background: #999999;
+		padding:5px;			
+		margin: -80px 10px 10px 10px;
+	}
+.top_menu_container{
+		float: right;
+		margin: 0px 0 0;
+    	padding: 1px;
+		background:url("../images/power_by.png") no-repeat scroll 0 66px transparent;
+	}
+.power_by{
+		font-style: italic;	
+		float: right;	
+		padding:10px 10px 10px 3px;
+		color: #fff;
+		
+	}
+.power_by h1{
+		font-size: 25px;
+			
+	}
+.power_by h1 a{
+		color:#fff;
+		text-decoration: none;
+			
+	}
+#content_profile{
+	background:#F4F4F4;
+	float: left;
+	width:640px;
+	min-height: 500px;
+	
+}
+.advertise {
+    float: left;
+    height: 500px;
+    margin: 0 5px;
+    width: 250px;
+    background:#fff;
+}
+.top_menu_container div.top_menu{
+		height: 40px;	
+	}
+.top_menu_container div.top_menu a{
+		color: #fff;	
+	}
+.personal_info{
+    	float: left;
+    	margin: 10px 0;
+    	width: 413px;
+	}
+.poster{
+		width: 150px;
+		border:1px solid;
+		margin:0px auto;
+		position:absolute;;
+		text-align: center;
+		background: #999999;
+		border-top: 0px;
+		border-left: 0px;
+		top: 0px;
+	}
+.poster a{
+	color:#fff;
+	font-weight: bold;
+	padding:3px;
+	display:block;
+	text-decoration: none;
+}
+
+.about{
+		padding:0px 10px;
+	}	
+.teams{
+		padding:10px;
+	}	
+.teams tr td ul{
+		padding:0px;
+		margin:0px;
+		list-style:none;
+	}
+.teams tr td ul li{
+		padding:1px;
+		margin:1px;
+		font-weight:bold;
+	}
+.teams tr td ul li span{
+		float:right;
+		font-weight:normal;
+	}
+.map{
+	height:160px;
+	margin:10px;
+	border:1px solid #999999;	
+}
+.list{
+	background:#fff;
+}
+.list ul{
+	padding:0px;
+	margin:0px;
+	list-style:none;
+}
+.list ul li{
+	padding:5px;
+	margin:1px;
+	list-style:none;
+	border-top:1px solid #999999;
+}
+.list ul li.head{
+		border:0px;
+	}
+.list ul li.head h2{
+		color:#02ACE9;
+	}
+.even{
+	background:#f4f4f4;
+}
+.odd{
+	background:#D1D4D4;
+}
+.pagination{
+	
+}
+.pagination ul{
+	padding:0px;
+	margin:0px auto;
+	list-style:none;
+}
+.pagination ul li{
+	padding:0px;
+	margin:1px;
+	border:1px solid #999999;
+	float:left;
+}
+.pagination ul li a{
+	padding:5px;
+	margin:0px;
+	display:block;
+}
+.pagination ul li a:hover{
+	background:#02ACE9;
+	color:#fff;
+}
+.pagination ul li a.active{
+	background:#02ACE9;
+	color:#fff;
+}
