@@ -10,7 +10,7 @@ if($_GET['country']!=''){
 }else{
 	$rep_data = 'India';
 }
-print_r($_GET);
+//print_r($_GET);
 
 $head_show = 'India';//ucwords(str_replace('_', ' ', $rep_data));
 

@@ -391,6 +391,36 @@ h1.inner_title span{
 	border:1px solid #02ACE9;
 }
 
+ul.new_items{
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+ul.new_items li{
+	float: left;
+	padding: 2px;
+	margin: 1px;
+	background: #999;
+}
+
+.home_image{
+	width: 99px;
+	float: left;
+	text-align: center;
+	height: 103px;
+	padding: 1px;
+	background: #fff;
+}
+
+.home_name{
+	clear:both;
+	width: 99px;
+	float: left;
+	text-align: center;
+	padding: 1px;
+	background: #fff;
+}
+
 .location ul{
 	list-style:none;
 	padding:0px;

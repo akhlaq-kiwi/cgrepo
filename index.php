@@ -125,51 +125,53 @@ $new_clubs = $DB->select('tbl_clubs',array(1=>1),'and', 'all', '0','5','user_id'
 					<div class="new_items_head">New Members! <a href="<?php echo $general->url;?>/cricketers-in-india" class="view_all" >View All</a></div>
 					<div class="new_items_List">
 						<?php if(is_array($new_members) && count($new_members)){?>
-							<table width="100%">
+							<ul class="new_items">
 							<?php foreach($new_members as $nm){?>
-								<tr>
-									<td width="30" align="left"><img src="<?php echo $general->url;?>/uploads/Thumb.php?path=users/<?php echo $image->profileImage($nm['user_id']);?>&width=50" /></td>
-									<td valign="top" width="80%"><?php echo $nm['first_name']!=''?$nm['first_name']:substr($nm['email'],0,strpos($nm['email'], '@'))?></td>
-									<td><a href="<?php echo $general->url;?>/cricketer/<?php echo $nm['username'];?>.html">View</a></td>
-								</td>
+								<li>
+									<div class="home_image"><img src="<?php echo $general->url;?>/uploads/Thumb.php?path=users/<?php echo $image->profileImage($nm['user_id']);?>&width=96" /></div>
+									<div class="home_name"><a href="<?php echo $general->url;?>/cricketer/<?php echo $nm['username'];?>.html"><?php echo $nm['first_name']!=''?$nm['first_name']:substr($nm['email'],0,strpos($nm['email'], '@'))?></a></div>
+									
+								</li>
 							<?php } ?>
-							</table>
+							</ul>
 						
 						<?php }else{ echo 'No New Member Found!';}?>
+						<div style="clear:both"></div>
 					</div>
+				
 				</div>
 				<div class="new_items">
 					<div class="new_items_head">New Teams</div>
 					<div class="new_items_List">
 						<?php if(is_array($new_teams) && count($new_teams)){?>
-							<table width="100%">
+							<ul class="new_items">
 							<?php foreach($new_teams as $nt){?>
-								<tr>
-									<td width="30" align="left"><img src="<?php echo $general->url;?>/uploads/Thumb.php?path=users/<?php echo $image->profileImage($nt['team_id']);?>&width=50" /></td>
-									<td valign="top" width="80%"><?php echo $nt['team_name'];?></td>
-									<td><a href="">View</a></td>
-								</td>
+								<li>
+									<div class="home_image"><img src="<?php echo $general->url;?>/uploads/Thumb.php?path=users/<?php echo $image->profileImage($nt['team_id']);?>&width=96" /></div>
+									<div class="home_name"><?php echo $nt['team_name'];?></div>
+								</li>
 							<?php } ?>
-							</table>
+							</ul>
 						
 						<?php }else{ echo 'No New Team Found!';}?>
+						<div style="clear:both"></div>
 					</div>
 				</div>
 				<div class="new_items">
 ,					<div class="new_items_head">New Clubs </div>
 					<div class="new_items_List">
 						<?php if(is_array($new_clubs) && count($new_clubs)){?>
-							<table width="100%">
+							<ul class="new_items">
 							<?php foreach($new_clubs as $nc){?>
-								<tr>
-									<td width="30" align="left"><img src="<?php echo $general->url;?>/uploads/Thumb.php?path=users/<?php echo $image->profileImage($nc['club_id']);?>&width=50" /></td>
-									<td valign="top" width="80%"><?php echo $nc['club_name'];?></td>
-									<td><a href="">View</a></td>
-								</td>
+								<li>
+									<div class="home_image"><img src="<?php echo $general->url;?>/uploads/Thumb.php?path=users/<?php echo $image->profileImage($nc['club_id']);?>&width=96" /></div>
+									<div class="home_name"><?php echo $nc['club_name'];?></div>
+								</li>
 							<?php } ?>
-							</table>
+							</ul>
 						
 						<?php }else{ echo 'No New Club Found!';}?>
+						<div style="clear:both"></div>
 					</div>
 				</div>
 			</div>

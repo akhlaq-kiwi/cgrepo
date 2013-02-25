@@ -16,7 +16,7 @@ class General extends DB{
 		$this->path = substr(realpath(__FILE__),0, $str_pos);
 		
 		if($_SERVER['HTTP_HOST']=='localhost'){
-			$this->url = 'http://localhost/cricketgali';
+			$this->url = 'http://localhost/cgrepo';
 		}else{
 			$this->url = 'http://www.cricketgali.com';
 		}

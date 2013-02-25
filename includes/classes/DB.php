@@ -16,7 +16,7 @@ class DB{
 			$this->DB_PASSWORD = 'root';
 		}else{
 			$this->DB_NAME = 'lafenzer_cricketgali';
-			$this->DB_USER = 'lafenzer_crick';
+			$this->DB_USER = 'lafenzer_akhlaq';
 			$this->DB_PASSWORD = 'ga12191219';
 		}
 		
