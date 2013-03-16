@@ -50,7 +50,9 @@
 					<form id="login" name="login" method="POST" action="<?php echo $general->url;?>/index.php?action=login" align="right"  >
 					  <table border="0" cellspacing="2" cellpadding="0">
                         <tr>
-							<td colspan="3">Already Mereber Login Here! | <a href="<?php echo $general->url;?>/index.php#register">New User</a></td>
+							<td colspan="3">Already Mereber Login Here! | <a href="<?php echo $general->url;?>/index.php#register">New User</a> |
+							<a href="<?php echo $general->url;?>/forget_password.php">Forget Password</a>
+							</td>
 						</tr>
 						<tr>
                           <td><input type="text" class="txtbox" name="email" value="" /></td>

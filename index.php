@@ -147,8 +147,8 @@ $new_clubs = $DB->select('tbl_clubs',array(1=>1),'and', 'all', '0','5','user_id'
 							<ul class="new_items">
 							<?php foreach($new_teams as $nt){?>
 								<li>
-									<div class="home_image"><img src="<?php echo $general->url;?>/uploads/Thumb.php?path=users/<?php echo $image->profileImage($nt['team_id']);?>&width=96" /></div>
-									<div class="home_name"><?php echo $nt['team_name'];?></div>
+									<div class="home_image"><img src="<?php echo $general->url;?>/uploads/Thumb.php?path=users/<?php echo $image->profileImage($nt['team_id']);?>&width=96" height="120" width="96"/></div>
+									<div class="home_name"><?php echo substr($nt['team_name'],0,10);?></div>
 								</li>
 							<?php } ?>
 							</ul>
@@ -164,7 +164,7 @@ $new_clubs = $DB->select('tbl_clubs',array(1=>1),'and', 'all', '0','5','user_id'
 							<ul class="new_items">
 							<?php foreach($new_clubs as $nc){?>
 								<li>
-									<div class="home_image"><img src="<?php echo $general->url;?>/uploads/Thumb.php?path=users/<?php echo $image->profileImage($nc['club_id']);?>&width=96" /></div>
+									<div class="home_image"><img src="<?php echo $general->url;?>/uploads/Thumb.php?path=users/<?php echo $image->profileImage($nc['club_id']);?>&width=96" height="120" width="96" /></div>
 									<div class="home_name"><?php echo $nc['club_name'];?></div>
 								</li>
 							<?php } ?>
