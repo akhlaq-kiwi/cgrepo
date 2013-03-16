@@ -52,10 +52,6 @@ if(!re.test(frm_frgpwd.forget_email.value)){
 			$subject = 'Reset your CricketGali.com password';
 			$message = "To reset your cricketgali.com password<a href=".$url_to_reset_password.">Click Here</a>";
 			
-			// To send HTML mail, the Content-type header must be set
-			$headers  = 'MIME-Version: 1.0' . "\r\n";
-			$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-
 			// Additional headers
 			$headers .= 'To: '.$email.'' . "\r\n";
 			$headers .= 'From: info@clicketgali.com' . "\r\n";
