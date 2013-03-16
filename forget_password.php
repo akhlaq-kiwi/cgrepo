@@ -57,8 +57,8 @@ if(!re.test(frm_frgpwd.forget_email.value)){
 			$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 
 			// Additional headers
-			$headers .= 'To: User <'.$email.'>' . "\r\n";
-			$headers .= 'From: Change Password <info@clicketgali.com>' . "\r\n";
+			$headers .= 'To: '.$email.'' . "\r\n";
+			$headers .= 'From: info@clicketgali.com' . "\r\n";
 			
 			mail($to, $subject, $message, $headers);
 
