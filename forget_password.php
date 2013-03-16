@@ -49,9 +49,9 @@ if(!re.test(frm_frgpwd.forget_email.value)){
 			$url_to_reset_password=$homeurl.'/reset_password.php?uid='.$user_id;
             
 			$to      = $email;
-			$subject = 'Reset your cricketgali.com password';
+			$subject = 'Reset your CricketGali.com password';
 			$message = "To reset your cricketgali.com password<a href=".$url_to_reset_password.">Click Here</a>";
-			$headers = 'From: amu02.aftab@gmail.com' . "\r\n" ;
+			$headers = 'From: CricketGali.com<no-reply@cricketgali.com>' . "\r\n" ;
 
 			mail($to, $subject, $message, $headers);
 
