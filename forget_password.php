@@ -57,7 +57,7 @@ if(!re.test(frm_frgpwd.forget_email.value)){
 			$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 
 			// Additional headers
-			$headers .= 'From: CricketGali.com <info@cricketgali.com>' . "\r\n";
+			$headers .= 'From: CricketGali <info@cricketgali.com>' . "\r\n";
 			
 			mail($to, $subject, $message, $headers);
 
