@@ -51,8 +51,15 @@ if(!re.test(frm_frgpwd.forget_email.value)){
 			$to      = $email;
 			$subject = 'Reset your CricketGali.com password';
 			$message = "To reset your cricketgali.com password<a href=".$url_to_reset_password.">Click Here</a>";
-			$headers = 'From: CricketGali.com <no-reply@cricketgali.com>' . "\r\n" ;
+			
+			// To send HTML mail, the Content-type header must be set
+			$headers  = 'MIME-Version: 1.0' . "\r\n";
+			$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 
+			// Additional headers
+			$headers .= 'To: User <'.$email.'>' . "\r\n";
+			$headers .= 'From: Change Password <info@clicketgali.com>' . "\r\n";
+			
 			mail($to, $subject, $message, $headers);
 
 			$update_status_qur="UPDATE `tbl_user` SET pwd_status='1' where user_id ='$user_id'";
