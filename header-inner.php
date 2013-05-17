@@ -12,7 +12,7 @@
   <script src="<?php echo $general->url;?>/js/calender/ui/jquery.ui.datepicker.js"></script>
   <link rel="stylesheet" href="<?php echo $general->url;?>/js/calender/demo.css">
   <script src="<?php echo $general->url;?>/js/script-ajax.js" type="text/javascript"></script>
-  <?php if(0){?>
+  <?php if(1){?>
   <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-27709921-2']);
