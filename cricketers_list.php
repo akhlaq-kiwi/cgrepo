@@ -1,12 +1,12 @@
 <?php
 if($rep_data=='india'){
-	$sql = "SELECT * FROM tbl_user where 1"; //"u inner join tbl_states s inner join tbl_address a on s.state_id=a.state and a.term_id=u.user_id where 1 and a.type='user' and state_uri='".$_GET['state']."'";
+	$sql = "SELECT * FROM tbl_user where 1 group by user_id desc"; //"u inner join tbl_states s inner join tbl_address a on s.state_id=a.state and a.term_id=u.user_id where 1 and a.type='user' and state_uri='".$_GET['state']."'";
 	$cricketers = $DB->fetchWithPagination($sql);
 }else if($_GET['state']!=''){
-	$sql = "SELECT * FROM tbl_user u inner join tbl_states s inner join tbl_address a on s.state_id=a.state and a.term_id=u.user_id where 1 and a.type='user' and state_uri='".$_GET['state']."'";
+	$sql = "SELECT * FROM tbl_user u inner join tbl_states s inner join tbl_address a on s.state_id=a.state and a.term_id=u.user_id where 1 and a.type='user' and state_uri='".$_GET['state']."'  group by u.user_id desc";
 	$cricketers = $DB->fetchWithPagination($sql);
 }else if($_GET['city']!=''){
-	$sql = "SELECT * FROM tbl_user u inner join tbl_cities c inner join tbl_address a on c.city_id=a.city and a.term_id=u.user_id where 1 and a.type='user' and city_uri='".$_GET['city']."'";
+	$sql = "SELECT * FROM tbl_user u inner join tbl_cities c inner join tbl_address a on c.city_id=a.city and a.term_id=u.user_id where 1 and a.type='user' and city_uri='".$_GET['city']."' group by u.user_id desc";
 	$cricketers = $DB->fetchWithPagination($sql);
 }
 
